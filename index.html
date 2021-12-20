@@ -8,7 +8,7 @@
 </head>
 <body>
     <div>
-        <table border="1" cellpadding="2" cellspacing="5" align="center">
+        <table border="1" cellpadding="2" cellspacing="5" align="">
             <tr>
                 <th colspan="3">Database Design process</th>
             </tr>
@@ -49,11 +49,48 @@
                             <td>area</td>
                             <td>&rarr;</td>
                             <td>number</td>
-
                         </tr>
                     </table>
                 </td>
                 <td>Each <strong><i>column</i></strong> should indicate the type of data that it is going to store</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table border="1" align="">
+            <tr>
+                <th>Creating a table in SQL</th>
+                <th>Inserting values in the table</th>
+                <th>selecting the columns</th>
+                <th>Processing data before receiving it</th>
+            </tr>
+            <tr>
+                <td><strong>CREATE TABLE</strong> cities ( <br>
+                     &nbsp; &nbsp;   name <strong>VARCHAR(50)</strong>, <br>
+                     &nbsp; &nbsp;   country <strong>VARCHAR(50)</strong>, <br>
+                     &nbsp; &nbsp;   population <strong>INTEGER</strong> , <br>
+                     &nbsp; &nbsp;   area <strong>INTEGER</strong> 
+                  );</td>
+                <td>
+                    <strong>INSERT INTO</strong>  cities (name, country, population, area) <br>
+                    <strong>VALUES</strong> <br>
+	                  &nbsp; &nbsp;  ('Delhi', 'India', 28125000, 2240), <br>
+                      &nbsp; &nbsp;  ('Shaghai', 'China', 22125000, 4015), <br>
+                      &nbsp; &nbsp;  ('Sao Paulo', 'Brazil', 20935000, 3043);
+                </td>
+                <td>
+                    <strong>SELECT</strong> * <strong>FROM</strong> cities; <br>
+                    <strong>SELECT</strong> name, country <strong>FROM</strong> cities; <br>
+                    <strong>SELECT</strong> name, population, area <strong>FROM</strong> cities; <br>
+                    <strong>SELECT</strong> name, name, name <strong>FROM</strong> cities;
+                </td>
+                <td>
+                    <strong>SELECT</strong> name, population/area <strong>FROM</strong> cities; <br>
+                    <strong>SELECT</strong> name, population/area <strong>as</strong> density <strong>FROM</strong> cities; <br>
+
+
+
+                </td>
             </tr>
         </table>
     </div>
