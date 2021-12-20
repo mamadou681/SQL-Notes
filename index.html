@@ -8,18 +8,52 @@
 </head>
 <body>
     <div>
-        <table>
+        <table border="1" cellpadding="2" cellspacing="5" align="center">
             <tr>
-                <th>Database Design process</th>
+                <th colspan="3">Database Design process</th>
             </tr>
             <tr>
-                <td>What kid of thing are we storing?</td>
+                <td>What kid of thing are we storing? &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &rarr;</td>
+                <td>We are storing a list of <strong><i>cities</i></strong>   &rarr;</td>
+                <td>We should create a <strong>table</strong> called <strong><i>'cities'</i></strong></td>
             </tr>
             <tr>
-                <td>What properties does this thing have?</td>
+                <td>What properties does this thing have? &rarr;</td>
+                <td>Each city has a <strong><i>name,</i></strong> <strong><i>country, </i></strong> 
+                    <strong><i>population, </i></strong> <strong><i>and area</i></strong> &rarr; </td>
+                <td>The table should have <strong><i>columns</i></strong> of name, country, population, area</td>
+                
             </tr>
             <tr>
-                <td>What <i>type</i> of data does each of those properties contain</td>
+                <td>What <i>type</i> of data does each of those properties contain? &rarr;</td>
+                <td>
+                    <table border="1" width="360" align="center">
+                        <tr>
+                            <td>name</td>
+                            <td>&rarr;</td>
+                            <td>string</td>
+                            <td rowspan="4">&rarr;</td>
+
+                        </tr>
+                        <tr>
+                            <td>country</td>
+                            <td>&rarr;</td>
+                            <td>string</td>
+                        </tr>
+                        <tr>
+                            <td>population</td>
+                            <td>&rarr;</td>
+                            <td>number</td>
+                        </tr>
+                        <tr>
+                            <td>area</td>
+                            <td>&rarr;</td>
+                            <td>number</td>
+
+                        </tr>
+                    </table>
+                </td>
+                <td>Each <strong><i>column</i></strong> should indicate the type of data that it is going to store</td>
             </tr>
         </table>
     </div>
